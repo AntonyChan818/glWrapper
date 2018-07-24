@@ -1,6 +1,5 @@
 #ifdef  CAMERA_H
 #define CAMERA_H
-#endif //  CAMERA_H
 
 #include<glad\glad.h>
 #include<glm/glm.hpp>
@@ -107,6 +106,30 @@ public:
 
 	//processes input received from a mouse scroll-wheel event. Only requires input on the vertical wheel-axis
 	void ProcessMouseScroll(float yoffset) {
-		
+		if (Zoom >= 1.0f && Zoom <= 45.0f) {
+			Zoom -= yoffset;
+		}
+		if (Zoom <= 1.0f) {
+			Zoom = 1.0f;
+		}
+		if (Zoom >= 45.0f) {
+			Zoom = 45.0f;
+		}
+	}
+
+private:
+	//calculate the front vector from the camera's update Euler Angles
+	void updateCameraVectors() {
+		//calculate the new Front vector
+		glm::vec3 front;
+		front.x = cos(glm::radians(Yaw))* cos(glm::radians(Pitch));
+		front.y = sin(glm::radians(Pitch));
+		front.z = sin(glm::radians(Yaw))* cos(glm::radians(Pitch));
+		Front = glm::normalize(front);
+		//recalculate the right and up vector
+		Right = glm::normalize(glm::cross(Front, WorldUp));
+		Up = glm::normalize(glm::cross(Right, Front));
 	}
 };
+
+#endif

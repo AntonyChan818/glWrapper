@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\gl\include\selfDefine\shader.h" />
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
