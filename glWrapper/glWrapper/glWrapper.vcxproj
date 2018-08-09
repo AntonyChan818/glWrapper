@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>..\gl\include;$(IncludePath)</IncludePath>
-    <LibraryPath>.\gl\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\gl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -80,6 +80,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -118,11 +123,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\gl\include\selfDefine\camera.h" />
     <ClInclude Include="..\gl\include\selfDefine\shader.h" />
-    <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Sof\OpenGL\GLAD\src\glad.c" />
+    <ClCompile Include="stbImage.cpp" />
     <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shader\4.2.lamp.fs" />
+    <None Include="..\shader\4.2.lamp.vs" />
+    <None Include="..\shader\4.2.lighting_maps.fs" />
+    <None Include="..\shader\4.2.lighting_maps.vs" />
+    <None Include="..\shader\5.1.lamp.fs" />
+    <None Include="..\shader\5.1.lamp.vs" />
+    <None Include="..\shader\5.1.light_casters.fs" />
+    <None Include="..\shader\5.1.light_casters.vs" />
+    <None Include="..\shader\5.3.spotlight.fs" />
+    <None Include="..\shader\5.4. lightmix.fs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
