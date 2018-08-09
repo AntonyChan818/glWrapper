@@ -61,7 +61,7 @@
     <None Include="..\shader\5.3.spotlight.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="..\shader\5.4. lightmix.fs">
+    <None Include="..\shader\5.4.lightmix.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
