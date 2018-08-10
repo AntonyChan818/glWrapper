@@ -26,10 +26,10 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Sof\OpenGL\GLAD\src\glad.c">
+    <ClCompile Include="stbImage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stbImage.cpp">
+    <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

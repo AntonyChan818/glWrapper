@@ -1,1 +1,39 @@
-﻿  glWrapper.vcxproj -> D:\Doc\glWrapper\glWrapper\Debug\glWrapper.exe
+﻿  glad.c
+  stbImage.cpp
+  test.cpp
+d:\glwrapper\glwrapper\gl\include\selfdefine\shader.h(65): warning C4101: “infoLog”: 未引用的局部变量
+d:\glwrapper\glwrapper\gl\include\selfdefine\shader.h(64): warning C4101: “success”: 未引用的局部变量
+d:\glwrapper\glwrapper\glwrapper\test.cpp(192): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(227): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(228): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(235): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(236): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(243): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(244): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(251): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(252): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(260): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(261): warning C4305: “参数”: 从“double”到“float”截断
+d:\glwrapper\glwrapper\glwrapper\test.cpp(376): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(377): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(381): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(382): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(384): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(385): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\glwrapper\glwrapper\glwrapper\test.cpp(394): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+glfw3.lib(context.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(context.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(init.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(init.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(input.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(monitor.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(vulkan.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(vulkan.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(window.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_init.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_init.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_joystick.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_monitor.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_monitor.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_time.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_time.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_tls.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_tls.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_window.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_window.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(wgl_context.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(wgl_context.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(egl_context.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(egl_context.obj)”或在“D:\glWrapper\glWrapper\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  glWrapper.vcxproj -> D:\glWrapper\glWrapper\Debug\glWrapper.exe

@@ -127,7 +127,7 @@
     <ClInclude Include="..\gl\include\selfDefine\shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Sof\OpenGL\GLAD\src\glad.c" />
+    <ClCompile Include="glad.c" />
     <ClCompile Include="stbImage.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
