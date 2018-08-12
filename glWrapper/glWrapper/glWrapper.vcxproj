@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="..\gl\include\selfDefine\camera.h" />
     <ClInclude Include="..\gl\include\selfDefine\shader.h" />
+    <ClInclude Include="..\gl\include\selfDefine\mesh.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
