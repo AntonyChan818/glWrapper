@@ -33,6 +33,55 @@ struct Texture {
 
 class Mesh {
 public:
-	/*Mesh Data*/
+	/*网格数据*/
+	vector<Vertex> vertices;
+	vector<unsigned int> indices;
+	vector<Texture> textures;
+	unsigned int VAO;
+
+	//Functions
+	//构造
+	Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures) {
+		this->vertices = vertices;
+		this->indices = indices;
+		this->textures = textures;
+
+		setupMesh();
+	}
+
+	//渲染网格
+	void Draw(Shader shader) {
+		//绑定合适的纹理
+		unsigned int diffuseNr = 1;
+		unsigned int specularNr = 1;
+		unsigned int normalNr = 1;
+		unsigned int heightNr = 1;
+		for (unsigned int i = 0; i < textures.size(); i++) {
+			glActiveTexture(GL_TEXTURE0 + i);	//在绑定之前激活合适的纹理
+
+			//遍历纹理号
+			string number;
+			string name = textures[i].type;
+			if (name == "texture_diffuse") {
+				number = std::to_string(diffuseNr++);
+			}
+			else if (name == "texture_specular") {
+				number = std::to_string(specularNr++); 
+			}
+			else if (name == "texture_normal") {
+				number = std::to_string(normalNr++);
+			}
+			else if (name == "texture_height") {
+				number = std::to_string(heightNr++);
+			}
+			glUniform1i(glGetUniformLocation(shader.ID, (name + number).c_str()), i);
+			glBindTexture(GL_TEXTURE_2D, textures[i].id);
+		}
+		//绘制网格
+		glBindVertexArray(VAO);
+		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
+		glBindVertexArray(0);
+	}
+
 };
 #endif // !MESH_H
