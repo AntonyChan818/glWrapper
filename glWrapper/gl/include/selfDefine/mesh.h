@@ -81,7 +81,32 @@ public:
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
 		glBindVertexArray(0);
+
+		glActiveTexture(GL_TEXTURE0);
 	}
+
+private:
+	//渲染数据
+	unsigned int VBO, EBO;
+
+	//初始化缓冲区
+	void setupMesh() {
+		//创建缓冲区
+		glGenVertexArrays(1, &VAO);
+		glGenBuffers(1, &VBO);
+		glGenBuffers(1, &EBO);
+
+		glBindVertexArray(VAO);
+		//将数据加载如vertex buffer
+		glBindBuffer(GL_ARRAY_BUFFER, VBO);
+		glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), &vertices[0], GL_STATIC_DRAW);
+		
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(Vertex), &indices[0], GL_STATIIC_DRAW);
+
+
+	}
+
 
 };
 #endif // !MESH_H
